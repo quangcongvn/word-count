@@ -1,6 +1,6 @@
 $(document).ready(function () {
    var converter = new showdown.Converter(),
-    text      = "Steps:    1. create html page    2. Include code";
+    text      = '# hello, markdown!',
     html      = converter.makeHtml(text);
     $('#test').html(html);
 }); // end ready
