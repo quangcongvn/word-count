@@ -3,6 +3,7 @@
  | [Github Project](https://github.com/quangconglampart/word-count)
  | [Markdown Reference](https://guides.github.com/features/mastering-markdown/#examples)
  <br>
+ [sub page](/sub-page.html)
 # Idea
 View word definition.<br>
 On word definition, select any work and view.<br>
