@@ -4,7 +4,7 @@
  | [Markdown Reference](https://guides.github.com/features/mastering-markdown/#examples)
  <br>
  [sub page](/sub-page.html)
-  | [sub page](/sub-page-md.md)
+  | [sub page md](/sub-page-md.md)
 # Idea
 View word definition.<br>
 On word definition, select any work and view.<br>
