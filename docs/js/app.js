@@ -1,3 +1,4 @@
+const API_KEY_CORS="5cd9396bd195ac1a818b86b8";
 $(document).ready(function () {
     var settings = {
         "async": true,
@@ -6,7 +7,7 @@ $(document).ready(function () {
         "method": "GET",
         "headers": {
           "content-type": "application/json",
-          "x-apikey": "5cd9396bd195ac1a818b86b8",
+          "x-apikey": API_KEY_CORS,
           "cache-control": "no-cache"
         }
       }
