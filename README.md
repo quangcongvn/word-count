@@ -15,7 +15,8 @@ Create a tool for:
 
 
 [comment]: JS
-[comment]: <> (<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>)
+~~this~~
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="myscripts.js"></script>
 
 
