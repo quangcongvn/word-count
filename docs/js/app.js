@@ -14,6 +14,7 @@ $(document).ready(function () {
 
     var db = firebase.firestore();
 
+    console.log(1);
     db.collection("users").add({
         first: "Ada",
         last: "Lovelace",
@@ -25,5 +26,5 @@ $(document).ready(function () {
         .catch(function (error) {
             console.error("Error adding document: ", error);
         });
-    // ab
+     console.log(2);
 }); // end ready
