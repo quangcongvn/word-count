@@ -1,7 +1,7 @@
 [comment]: MENU
 [View Site](https://quangconglampart.github.io/word-count)
  | [Github Project](https://github.com/quangconglampart/word-count)
- | [Markdown Fast Reference](https://guides.github.com/features/mastering-markdown/#examples)
+ | [Markdown Reference](https://guides.github.com/features/mastering-markdown/#examples)
  <br>
 # Idea
 View word definition.<br>
@@ -13,13 +13,13 @@ Create a tool for:
 1. work space for click, use html page.
 2. counting English words for statistics.
 
-# Code
-## JS
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+[comment]: JS
+[comment]: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="myscripts.js"></script>
 
 
-
+t
 TODO (TEMP)
 - add site shortcut (.io)
 - test js embled
