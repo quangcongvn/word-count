@@ -1,6 +1,7 @@
 # word-count
 Simple word counting utility
 ## Shortcut
+- [View Site](https://quangconglampart.github.io/word-count)
 - [Markdown Fast Reference](https://guides.github.com/features/mastering-markdown/#examples)
 # Idea
 View word definition.<br>
@@ -16,3 +17,9 @@ Create a tool for:
 ## JS
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="myscripts.js"></script>
+
+
+
+TODO (TEMP)
+- add site shortcut (.io)
+- test js embled
