@@ -1,9 +1,4 @@
 [comment]: MENU
-[Github Project](https://github.com/quangconglampart/word-count)
- | [Markdown Reference](https://guides.github.com/features/mastering-markdown/#examples)
- <br>
- [sub page](/sub-page.html)
-
 
 [comment]: JS (not show in Page)
 <hr>

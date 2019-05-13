@@ -1,6 +1,5 @@
 # WORD COUNT - Document
 [View Site](https://quangconglampart.github.io/word-count)
- | [Github Project](https://github.com/quangconglampart/word-count)
  | [Markdown Reference](https://guides.github.com/features/mastering-markdown/#examples)
 # Idea
 View word definition.<br>
