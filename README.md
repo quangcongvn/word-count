@@ -32,3 +32,5 @@ TODO (TEMP)
 
 [//]: <> (This is also a comment.)
 [//]: # (This may be the most platform independent comment)
+[comment]: a
+[//]: this is comment
