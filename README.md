@@ -14,6 +14,18 @@ Create a tool for:
 1. work space for click, use html page.
 2. counting English words for statistics.
 
+# Feature
+## Sub page
+Use Markdown for sub page.<br>
+Javascript lib: https://github.com/showdownjs/showdown <br>
+Steps:
+1. create html page
+2. Include code
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/showdown.min.js"></script>
+```
 
 [comment]: JS (not show in Page)
 <hr>
