@@ -14,9 +14,8 @@ Create a tool for:
 2. counting English words for statistics.
 
 
-[comment]: JS
+[comment]: JS (not show in Page)
 <hr>
-<!-- JS not show in Page-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="js/app.js"></script>
 
