@@ -20,9 +20,3 @@ Create a tool for:
 <script src="js/app.js"></script>
 
 
-t
-TODO (TEMP)
-- add site shortcut (.io)
-- test js embled
-
-
