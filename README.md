@@ -1,8 +1,10 @@
 # word-count
 Simple word counting utility
 ## Shortcut
-- [View Site](https://quangconglampart.github.io/word-count)
-- [Markdown Fast Reference](https://guides.github.com/features/mastering-markdown/#examples)
+[View Site](https://quangconglampart.github.io/word-count)
+ | [Github Project](https://github.com/quangconglampart/word-count)
+ | [Markdown Fast Reference](https://guides.github.com/features/mastering-markdown/#examples)
+ <br>
 # Idea
 View word definition.<br>
 On word definition, select any work and view.<br>
