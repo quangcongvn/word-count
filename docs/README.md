@@ -5,12 +5,44 @@ hey
 [comment]: BOTTOM  (zz)
 <div class="w3-container">
     <div class="w3-row">
-    <div class="w3-col s3 w3-green">
-        <p>s3</p>
+        <div class="w3-col s3 w3-green">
+            <p>s3</p>
+        </div>
+        <div class="w3-col s9 w3-dark-grey">
+            <p>s9</p>
+        </div>
     </div>
-    <div class="w3-col s9 w3-dark-grey">
-        <p>s9</p>
+    <div class="w3-row">
+        <div class="w3-col s3 w3-green">
+            <p>s3</p>
+        </div>
+        <div class="w3-col s9 w3-dark-grey">
+            <p>s9</p>
+        </div>
     </div>
+    <div class="w3-row">
+        <div class="w3-col s3 w3-green">
+            <p>s3</p>
+        </div>
+        <div class="w3-col s9 w3-dark-grey">
+            <p>s9</p>
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col s3 w3-green">
+            <p>s3</p>
+        </div>
+        <div class="w3-col s9 w3-dark-grey">
+            <p>s9</p>
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col s3 w3-green">
+            <p>s3</p>
+        </div>
+        <div class="w3-col s9 w3-dark-grey">
+            <p>s9</p>
+        </div>
     </div>
 </div>
 
