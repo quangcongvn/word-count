@@ -2,6 +2,18 @@
 # test
 hey
 
+[comment]: MIDDLE (XX)
+<div class="w3-cell w3-cell-top w3-card-4 w3-center">
+    <header class="w3-container w3-blue">
+        <h1 id='word'>A Car</h1>
+    </header>
+    <div class="w3-container">
+        <p id='definition'>
+        A car is a wheeled, self-powered motor vehicle used for transportation.
+        </p>
+    </div>
+</div>
+
 [comment]: BOTTOM  (zz)
 <div class="w3-container w3-bottom">
     <div class="w3-row recent-last">

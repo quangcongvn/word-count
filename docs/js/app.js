@@ -20,5 +20,5 @@
 
 
 $(document).ready(function () {
-  
+  /// definition 
 }); // end ready
