@@ -1,0 +1,14 @@
+#!/bin/bash
+#######################################################
+# use for sync project on CentOS 7
+# nodemon will update change for testing
+#USE
+#
+# bash gitsync
+#
+#######################################################
+
+#override all local file
+git fetch origin
+git reset --hard origin/master
+#nodemon will update change...
