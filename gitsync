@@ -4,9 +4,11 @@
 # nodemon will update change for testing
 #USE
 #
-# bash gitsync
+# sh /var/www/html/gitsync
 #
 #######################################################
+
+# NOTE PhpStorm, file end line LF (Linux)
 
 #override all local file
 git fetch origin

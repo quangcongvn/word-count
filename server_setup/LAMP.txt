@@ -49,8 +49,10 @@ sudo systemctl restart httpd.service
 yum install git -y
 git --version
 
+### clone source
+git clone https://github.com/quangcongvn/word-count.git /var/www/html
+
 ### checking
 php --version
-echo 'hello' > '/var/www/html/index.html'
 echo 'your site ready on directory: /var/www/html'
 firewall-cmd --list-all
