@@ -1,3 +1,3 @@
 # WORD COUNT - Document
-[View Site](https://quangconglampart.github.io/word-count)
+[View Site](http://45.32.109.134/)
  | [Markdown Reference](https://guides.github.com/features/mastering-markdown/#examples)
