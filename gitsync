@@ -4,7 +4,7 @@
 # nodemon will update change for testing
 #USE
 #
-# sh /var/www/html/gitsync
+# cd /var/www/html; bash gitsync
 #
 #######################################################
 
