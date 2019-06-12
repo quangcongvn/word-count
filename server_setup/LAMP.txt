@@ -16,7 +16,7 @@ sudo systemctl start httpd.service
 sudo systemctl enable httpd.service
 # open port 80,
 # check port: firewall-cmd --list-all
-sudo firewall-cmd --add-port=80/tcp
+sudo firewall-cmd --add-port=80/tcp --permanent
 
 ## MySQL (MariaDB)
 sudo yum install mariadb-server mariadb -y
@@ -34,7 +34,7 @@ sudo mysql_secure_installation
 #       GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'  IDENTIFIED BY '{Pass}' WITH GRANT OPTION;
 #       can replace 'root'@'%' , %= ip white list
 #    3. open port 3306
-#       sudo firewall-cmd --add-port=3306/tcp
+#       sudo firewall-cmd --add-port=3306/tcp --permanent
 #    4. restart service
 #       sudo service mariadb restart
 
