@@ -2,7 +2,7 @@
 #######################################################
 #simple setup node.js, use:
 #
-# yum -y install wget && wget -q https://www.dropbox.com/s/wdgz8gcr6vvh1ko/LAMP.txt?dl=1 -O /root/install_script && bash /root/install_script
+# yum -y install wget && wget -q https://raw.githubusercontent.com/quangcongvn/word-count/master/server_setup/LAMP.txt -O /root/install_script && bash /root/install_script
 #
 #######################################################
 
