@@ -1,14 +1,17 @@
-centos7 minimal
+centos7 minimal ISO<br>
 setup network: https://adminvietnam.org/cau-hinh-static-ip-tren-centos-7/2186/
+    * type = __static__
+    * ip, netmask, gateway like ipconfig cmd windows
+    * onboot=__yes__
 
-
-setup guess
+setup guess<br> 
 https://www.tecmint.com/install-virtualbox-guest-additions-in-centos-rhel-fedora/
+
+Startup scripts: https://www.centos.org/forums/viewtopic.php?t=48140
 
 share folder: https://www.sitecuatui.com/shared-folders-virtualbox/
 https://www.virtualbox.org/manual/ch04.html#sf_mount_auto
 
-Startup scripts: https://www.centos.org/forums/viewtopic.php?t=48140
 
 # Share folder
 Virtual box share folder:
@@ -28,9 +31,13 @@ Virtual box share folder:
     * step 3: setup Share folder
         * Go menu __Devices__ > **Shared folder...**
         * Reboot
-        * Shared folder will locate: **/media/sf_{folder name}**
-    * step 4:
-		* add apache to Vbox share folder:  
+        * Shared folder will locate: **/media/sf_{folder name}** , if share folder not appear, __reboot__ again.
+    * step 4: run LAMP_local.txt scripts 
+ 
+ 
+ _move to LAMP_local.txt script for run after install apache_
+ 
+		* add apache permission to Vbox share folder:  
 		    * usermod -a -G vboxsf apache
 		* disable and SElinux and add to startup<br>
 		    * chmod +x /etc/rc.d/rc.local && echo "# disable SELinux" >> /etc/rc.d/rc.local && echo "getenforce" >> /etc/rc.d/rc.local && echo "setenforce 0" >> /etc/rc.d/rc.local

@@ -57,6 +57,10 @@ git clone https://github.com/quangcongvn/word-count.git /media/sf_www
 # replace path local
 sed -i 's/\/var\/www\/html/\/media\/sf_www/g' /etc/httpd/conf/httpd.conf
 sed -i 's/\/var\/www/\/media/g' /etc/httpd/conf/httpd.conf
+# add apache permission to Vbox share folder
+usermod -a -G vboxsf apache
+# disable and SElinux and add to startup
+chmod +x /etc/rc.d/rc.local && echo "# disable SELinux" >> /etc/rc.d/rc.local && echo "getenforce" >> /etc/rc.d/rc.local && echo "setenforce 0" >> /etc/rc.d/rc.local
 
 ### checking
 php --version
