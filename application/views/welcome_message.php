@@ -1,2 +1,2 @@
 <?php
-echo "from local VM";
+echo "hello CI.";
