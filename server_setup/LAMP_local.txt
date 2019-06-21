@@ -30,7 +30,8 @@ sudo mysql_secure_installation
 # allow remote: https://mariadb.com/kb/en/library/configuring-mariadb-for-remote-client-access/
 #    1. open file: /etc/my.cnf.d/server.cnf , add below [mysqld]:
 #       bind-address = 0.0.0.0
-#    2. Run command: mysql -u root -p , then enter {Pass}
+#    2. Run command:
+#       mysql -u root -p , then enter {Pass}
 #       GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'  IDENTIFIED BY '{Pass}' WITH GRANT OPTION;
 #       can replace 'root'@'%' , %= ip white list
 #    3. open port 3306
