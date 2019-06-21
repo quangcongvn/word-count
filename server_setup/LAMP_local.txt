@@ -50,13 +50,15 @@ yum install git -y
 git --version
 
 ### clone source
-git clone https://github.com/quangcongvn/word-count.git /media/sf_www
+rm -rf /media/sf_www/word_count
+mkdir /media/sf_www/word_count
+git clone https://github.com/quangcongvn/word-count.git /media/sf_www/word_count
 
 \/var\/www\/html
 ### update apache config
 # replace path local
-sed -i 's/\/var\/www\/html/\/media\/sf_www/g' /etc/httpd/conf/httpd.conf
-sed -i 's/\/var\/www/\/media/g' /etc/httpd/conf/httpd.conf
+sed -i 's/\/var\/www\/html/\/media\/sf_www\/word_count/g' /etc/httpd/conf/httpd.conf
+sed -i 's/\/var\/www/\/media\/sf_www/g' /etc/httpd/conf/httpd.conf
 # add apache permission to Vbox share folder
 usermod -a -G vboxsf apache
 # disable and SElinux and add to startup
