@@ -1,0 +1,64 @@
+#!/bin/bash
+#######################################################
+#simple setup node.js, use:
+#
+# yum -y install wget && wget -q https://raw.githubusercontent.com/quangcongvn/word-count/master/server_setup/LAMP_local.txt -O /root/install_script && bash /root/install_script
+#
+#######################################################
+
+# NOTE PhpStorm, file end line LF (Linux)
+
+# https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7
+
+## apache
+sudo yum install httpd -y
+sudo systemctl start httpd.service
+sudo systemctl enable httpd.service
+# open port 80,
+# check port: firewall-cmd --list-all
+sudo firewall-cmd --add-port=80/tcp --permanent
+
+## MySQL (MariaDB)
+sudo yum install mariadb-server mariadb -y
+sudo systemctl start mariadb
+sudo systemctl enable mariadb.service
+# setting password
+sudo mysql_secure_installation
+
+# pass: xxx__X444__
+# change pass: SET PASSWORD FOR 'root'@'localhost' = PASSWORD('xxx__X444__');
+# allow remote: https://mariadb.com/kb/en/library/configuring-mariadb-for-remote-client-access/
+#    1. open file: /etc/my.cnf.d/server.cnf , add below [mysqld]:
+#       bind-address = 0.0.0.0
+#    2. Run command: mysql -u root -p , then enter {Pass}
+#       GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'  IDENTIFIED BY '{Pass}' WITH GRANT OPTION;
+#       can replace 'root'@'%' , %= ip white list
+#    3. open port 3306
+#       sudo firewall-cmd --add-port=3306/tcp --permanent
+#    4. restart service
+#       sudo service mariadb restart
+
+### PHP7
+# https://www.vultr.com/docs/how-to-install-php-7-x-on-centos-7
+sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+sudo yum install -y mod_php71w php71w-cli php71w-common php71w-gd php71w-mbstring php71w-mcrypt php71w-mysqlnd php71w-xml
+sudo systemctl restart httpd.service
+
+### git
+yum install git -y
+git --version
+
+### clone source
+git clone https://github.com/quangcongvn/word-count.git /media/sf_www
+
+\/var\/www\/html
+### update apache config
+# replace path local
+sed -i 's/\/var\/www\/html/\/media\/sf_www/g' /etc/httpd/conf/httpd.conf
+sed -i 's/\/var\/www/\/media/g' /etc/httpd/conf/httpd.conf
+
+### checking
+php --version
+echo 'your site ready on directory: /media/sf_www'
+firewall-cmd --list-all
