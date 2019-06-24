@@ -10,3 +10,7 @@ mysqldump -u root -pxxx__X444__ word_count > /media/sf_www/word_count/sql/db.sql
 
 ## import db
 mysql -u root -pxxx__X444__ word_count < /media/sf_www/word_count/sql/db.sql
+
+
+# HMVC
+	https://stackoverflow.com/questions/30865998/how-to-implement-hmvc-in-codeigniter-3-0/31008225#31008225
