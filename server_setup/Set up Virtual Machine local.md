@@ -1,3 +1,7 @@
+# Required
+VirtualBox 5.2.30
+https://www.virtualbox.org/wiki/Download_Old_Builds_5_2
+# Reference
 centos7 minimal ISO<br>
 setup network: https://adminvietnam.org/cau-hinh-static-ip-tren-centos-7/2186/
     * type = __static__
